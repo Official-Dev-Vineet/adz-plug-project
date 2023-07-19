@@ -22,7 +22,7 @@ function disableScroll() {
 window.onresize = function () {
   document.querySelector(".bar").classList.remove("active");
   document.querySelector(".nav-list").classList.remove("active");
-  removeStart("star");
+  removeStart(".star");
   createStart("star");
 };
 const waves = document.querySelectorAll(".waves .wave");
