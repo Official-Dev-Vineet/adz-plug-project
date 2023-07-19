@@ -49,8 +49,8 @@ function createStart(className) {
     for (let j = 0; j < height; j += 50) {
       let star = document.createElement("span");
       star.className = className;
-      star.style.left = Math.round(Math.random() * width) + "px";
-      star.style.top = Math.round(Math.random() * height) + "px";
+      star.style.left = Math.round(Math.random() * width + 10) + "px";
+      star.style.top = Math.round(Math.random() * height + 10) + "px";
       document.querySelector("header").appendChild(star);
     }
   }

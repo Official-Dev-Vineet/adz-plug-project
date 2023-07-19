@@ -171,13 +171,13 @@ header .wave1 {
 }
 header .wave2 {
   background-image: url("http://front-end-noobs.com/jecko/img/wave-mid.png");
-  animation: wave 10s linear infinite;
-  animation-delay: 5s;
+  animation: wave 5s linear infinite;
+  animation-delay: 2s;
 }
 header .wave3 {
   background-image: url("http://front-end-noobs.com/jecko/img/wave-bot.png");
   animation: wave 12s linear infinite;
-  animation-delay: -5s;
+  animation-delay: -15s;
 }
 .stars {
   position: fixed;
