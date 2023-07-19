@@ -299,12 +299,11 @@ header .wave3 {
 .star:nth-child(odd) {
   animation: width 3s infinite linear, animate 6s infinite linear;
   animation-delay: -6s;
-  box-shadow: 0 0 3px rgb(255, 255, 255);
+
 }
 .star:nth-child(even) {
   animation: widthDouble 4s infinite linear, animate 10s infinite linear;
   animation-delay: -10s;
-  box-shadow: 0 0 5px rgb(255, 255, 255);
 }
 @keyframes animate {
   100% {
