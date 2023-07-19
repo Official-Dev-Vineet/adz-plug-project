@@ -287,17 +287,15 @@ header .wave3 {
 .star {
   display: inline-block;
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 1.5px;
+  height: 1.5px;
   background-color: #fff;
-  animation: animate 3s linear infinite;
-  -webkit-animation: animate 3s linear infinite;
   transition: all 0.5s;
   border-radius: 50%;
   transform: translateY(-5px);
 }
 .star:nth-child(odd) {
-  animation: width 3s infinite linear, animate 6s infinite linear;
+  animation: animate 6s infinite linear;
   animation-delay: -6s;
 
 }
