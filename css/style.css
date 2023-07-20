@@ -302,12 +302,12 @@ header .wave3 {
   animation: widthDouble 4s infinite linear, animate 10s infinite linear;
   animation-delay: -10s;
 }
-@keyframes animate {
+@keyframes animat {
   100% {
     transform: translateY(-100px);
   }
 }
-@keyframes width {
+@keyframes widt{
   0% {
     width: 0.5px;
     height: 0.5px;
@@ -319,7 +319,7 @@ header .wave3 {
     opacity: 1;
   }
 }
-@keyframes widthDouble {
+@keyframes widthDoube {
   0% {
     width: 1.5px;
     height: 1.5px;
