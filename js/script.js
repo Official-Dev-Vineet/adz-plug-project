@@ -26,4 +26,3 @@ window.onfocus = function () {
   });
 };
 
-// append star
