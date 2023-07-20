@@ -22,7 +22,7 @@ function disableScroll() {
 window.onresize = function () {
   document.querySelector(".bar").classList.remove("active");
   document.querySelector(".nav-list").classList.remove("active");
-  removeStart(".star");
+  removeStart("star");
   createStart("star");
 };
 const waves = document.querySelectorAll(".waves .wave");
@@ -47,14 +47,16 @@ function createStart(className) {
   let height = document.querySelector("header").offsetHeight;
   for (let i = 0; i < width; i += 50) {
     for (let j = 0; j < height; j += 50) {
-      let vertical = Math.round(Math.random() * width + 10) + "px";
-      let horizontal = Math.round(Math.random() * height + 10) + "px";
-      document.querySelector('header').innerHTML += `<div class="star" style="top: ${horizontal}; left: ${vertical};"></div>`;
+      let star = document.createElement("span");
+      star.className = className;
+      star.style.left = Math.round(Math.random() * width + 10) + "px";
+      star.style.top = Math.round(Math.random() * height + 10) + "px";
+      document.querySelector("header").appendChild(star);
     }
   }
 }
 function removeStart(className) {
-  document.querySelectorAll(className).forEach((element) => {
+  document.querySelectorAll(`.${className}`).forEach((element) => {
     element.remove();
   });
 }
